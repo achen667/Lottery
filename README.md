@@ -1,4 +1,4 @@
-#  Raffle Smart Contract
+#  Lottery 
 
 A decentralized and automated raffle (lottery) contract built using **Solidity**, **Chainlink VRF v2.5**, and **Foundry**.
 
@@ -148,4 +148,3 @@ make enterRaffle
 
 ---
  
-
