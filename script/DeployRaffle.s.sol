@@ -18,9 +18,6 @@ contract DeployRaffle is Script {
         HelperConfig helperConfig = new HelperConfig(); // This comes with our mocks!
         HelperConfig.NetworkConfig memory config = helperConfig.getConfig();
 
-        //update subscription ID if it is not set
-        /********************debug **********/
-        console2.log("config.subscriptionId",config.subscriptionId);
 
         if (config.subscriptionId == 0) {
             revert NoSubscriptionId();

@@ -52,11 +52,8 @@ contract InteractionTest  is  Test, CodeConstants{
     bool found = false;
     
     for (uint i = 0; i < logs.length; i++) {
-        //console2.logBytes32(logs[1].topics[1]);
         if (logs[i].topics.length > 0 && logs[i].topics[0] == keccak256("SubscriptionFunded(uint256,uint256,uint256)")) {
             found = true;
-            console2.log(config.subscriptionId);
-            console2.log(i);
             break;
         }
     }

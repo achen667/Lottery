@@ -85,14 +85,14 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory mainnetNetworkConfig)
     {
         mainnetNetworkConfig = NetworkConfig({
-            subscriptionId: 0, // If left as 0, our scripts will create one!
+            subscriptionId: 0, // Add your sub id 
             gasLane: 0x9fe0eebf5e446e3c998ec9bb19951541aee00bb90ea201ae456421a2ded86805,
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinator: 0x271682DEB8C4E0901D1a1550aD2e64D568E69909,
             link: 0x514910771AF9Ca656af840dff83E8264EcF986CA,
-            account: address(0)
+            account: address(0) // Add your account address
         });
     }
 
@@ -102,14 +102,14 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory sepoliaNetworkConfig)
     {
         sepoliaNetworkConfig = NetworkConfig({
-            subscriptionId: 65250172920037624276439517749927901013062081255386449957300879554996081364339, // If left as 0, our scripts will create one!
+            subscriptionId: 0, // Add your sub id 
             gasLane: 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae,
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinator: 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,
             link: 0x779877A7B0D9E8603169DdbD7836e478b4624789,
-            account: address(0)
+            account: address(0)  // Add your account address
         });
     }
 
